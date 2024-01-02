@@ -741,5 +741,5 @@ func ConfigureProvider(s *schema.ResourceData) (interface{}, error) {
 	if err != nil {
 		return nil, err
 	}
-	return client.GetConn().DB, nil
+	return client.GetConn(), nil
 }
